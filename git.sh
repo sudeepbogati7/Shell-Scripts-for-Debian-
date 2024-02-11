@@ -1,6 +1,27 @@
 #!/bin/bash
 cowsay Hey man , I am going to push your works on your github repo ......
 sleep 2
+
+cowsay First of all , hey do you have git installed on your machine ?
+echo "Checking / installing git on your machine ........"
+sleep 3
+
+#Checking the git
+if ! command -v git &>/dev/null; then
+	echo "Git is not installed on your machine !!"
+	echo "Installing git ........."
+	sleep 3
+	sudo apt update
+	sudo apt install git -y
+	sleep 2
+	echo "Git has been installed Succesfully ....."
+	sleep 2
+else
+	echo "Nice, git is already installed .. !"
+	sleep 3
+fi
+
+# begin git operations
 git init
 echo "Adding your data ........"
 git add .
