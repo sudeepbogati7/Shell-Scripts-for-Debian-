@@ -1,5 +1,5 @@
 ## 1.git.sh Script 
-*By running `git.sh` script on your machine , it will initialize git in your required directory and prompt you for some data then automatically push to the repository.....*
+*By running `git.sh` script on your machine , it will install (if not installed) and initialize git in your required directory , prompt you for some data then automatically push to the repository.....*
 
 **To get started with git.sh**
 1. Clone this repo :
