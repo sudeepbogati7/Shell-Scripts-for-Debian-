@@ -1,4 +1,7 @@
 #!/bin/bash
+echo "Installing dependencies ........."
+sleep 3
+sudo apt install cowsay -y
 cowsay Hey man , I am going to push your works on your github repo ......
 sleep 2
 

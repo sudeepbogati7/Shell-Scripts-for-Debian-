@@ -1,5 +1,8 @@
 #!/bin/bash
-
+echo "------------------------------------------------------------------"
+echo "Installing dependencies ..........."
+echo "------------------------------------------------------------------"
+sleep 3
 cowsay Hey , Do you wanna get relax with music ......? Okey, I will be playing some musics of your choice
 sleep 3
 
