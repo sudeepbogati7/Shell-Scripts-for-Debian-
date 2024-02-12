@@ -37,6 +37,7 @@ sleep 1
 git commit -m "$commitMessage"
 
 # ask user to change the branch
+branch="master"
 echo -n "Do you want to change the branch from master to main ? (y/n): "
 read choice_char
 sleep 1
@@ -44,7 +45,8 @@ sleep 1
 if [ "$choice_char" = "y" ]; then
 	echo "Switching to main branch ..........."
 	sleep 1
-	git branch -M main
+	branch="main"
+	git branch -M $branch
 	sleep 1
 	echo "Now you are on main branch !!"
 else
