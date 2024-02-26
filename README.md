@@ -29,6 +29,7 @@ Now, it will install all the packages you need in your machine .....
 
 ## 3. [music-player.sh](https://github.com/sudeepbogati7/Bourne-again-Shell-Scripts/blob/master/music-player.sh)
 *This scripts helps you to play music/tracks of your `home/Music` directory*
+
 To begin : 
 ```
 chmod +x music-player.sh && ./music-player.sh
