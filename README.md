@@ -34,3 +34,12 @@ To begin :
 ```
 chmod +x music-player.sh && ./music-player.sh
 ```
+
+
+### 4. [set-timer.sh](https://github.com/sudeepbogati7/Bourne-again-Shell-Scripts/blob/master/set-timer.sh)
+*This script allows you to set timers.*
+
+To begin : 
+```
+chmod +x set-timer.sh && ./set-timer.sh
+```
