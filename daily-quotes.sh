@@ -1,8 +1,6 @@
 #!/bin/bash
 
-API_KEY='UKBqKHaKlaBpFEuetXqwLw==N4VefW44lZAytRGg'
-
-quote_data=$(curl -s "https://api.api-ninjas.com/v1/quotes?category=life" -H "Authorization: $API_KEY")
+quote_data=$(curl -s "https://api.quotable.io/random")
 
 quote=$(echo "$quote_data" | jq -r '.[0].quote // .quote')
 
