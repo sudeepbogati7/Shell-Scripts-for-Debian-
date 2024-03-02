@@ -1,6 +1,10 @@
 #!/bin/bash
-#!/bin/bash
 
+sudo apt install cowsay -y
+clear
+echo "Hello $(whoami) ,"
+sleep 2
+cowsay You wanna set timers ?!
 # Function to display the countdown
 function countdown {
 	local remaining=$1
@@ -20,14 +24,23 @@ function validate_input {
 	fi
 }
 
+# Function to prompt user for input
+function prompt_for_duration {
+	read -p "Enter the duration in seconds: " duration
+	validate_input $duration
+}
+
 # Main script starts here
-if [ $# -ne 1 ]; then
-	echo "Usage: $0 <duration in seconds>"
-	exit 1
+if [ $# -eq 1 ]; then
+	# Validate input if provided as command line argument
+	validate_input $1
+	duration=$1
+else
+	# Prompt user for input
+	prompt_for_duration
 fi
 
-# Validate input
-validate_input $1
-
 # Start the countdown
-countdown $1
+countdown $duration
+sleep 1
+echo "Thanks for using ! (follow for more : https://github.com/sudeepbogati7)"
