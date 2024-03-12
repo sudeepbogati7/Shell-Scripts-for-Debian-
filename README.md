@@ -55,3 +55,5 @@ To begin :
 ```
 chmod +x set-timer.sh && ./set-timer.sh
 ```
+
+Keep Learning , keep exploring ..........
